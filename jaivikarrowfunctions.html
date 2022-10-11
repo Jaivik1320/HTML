@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Functions</title>
+</head>
+<body>
+    <div class="container">
+        This is all about arrow Functions
+    </div>
+    <script>
+
+        let greet = () =>{
+            console.log('Helloww');
+        }
+
+        let sum = (a , b) => a+b;
+        let half = a => a/2;
+        // function greet(){
+        //     console.log("Heya");
+        // }
+        greet();
+        setTimeout(() =>{
+            console.log("inside timeout");
+        }, 2000);
+    </script>
+</body>
+</html> 
