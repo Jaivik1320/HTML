@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute and nth child pseudo selectors</title>
+    <style>
+        .container{
+            display: block;
+            margin: auto;
+            width: 233px;
+        }
+        input{
+            display: block;
+        }
+        input[type='text']{
+            padding: 23px;
+            border: 2px solid red;
+        }
+        input[type='password']{
+            padding: 23px;
+            border: 2px solid green;
+        }
+        input[type='submit']{
+            padding:13px;
+            border: 2px solid palevioletred;
+            background-color: aquamarine;
+        }
+        li:nth-child(3){
+            color:darkmagenta;
+         }
+         li:nth-child(odd){
+            color: blue;
+            background-color: thistle;
+         }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="" class="from-control">
+            <input type="text" placeholder="Enter your name">
+            <input type="password" placeholder="Enter your password">
+            <input type="submit" class="submit">
+        </form>
+        <ul>
+            <li class="item" id="itme-1">item1</li>
+            <li class="item" id="itme-2">item2</li>
+            <li class="item" id="itme-3">item3</li>
+            <li class="item" id="itme-4">item4</li>
+            <li class="item" id="itme-5">item5</li>
+        </ul>
+    </div>
+</body>
+</html>
