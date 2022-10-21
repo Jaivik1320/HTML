@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyframes and Animations</title>
+</head>
+<style>
+.container{
+    /* display: flex; */
+    background-color: aqua;
+}
+.box{
+    background-color: tomato;
+    width: 350px;
+    height: 250px;
+    position: relative;
+    animation-name: jaivik2;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    /* animation-fill-mode: alternate; */
+    /* animation-timing-function: ease-in-out; */
+    /* animation-direction: reverse; */
+}
+@keyframes jaivik {
+    from{
+width: 200px;
+    }
+    to{
+width: 400px;
+    }
+}
+@keyframes jaivik2{
+    0%{
+        top: 0px;
+        left: 0px;
+    }
+    25%{
+        top: 250px;
+        left: 0px;
+    }
+    75%{
+        top: 250px;
+        left: 250px;
+    }
+    100%{
+        top: 0px;
+        left: 250px;
+    }
+}
+</style>
+<body>
+    <div class="container">
+        <div class="box">
+            This is a box for keyframes and Animations
+        </div>
+    </div>
+</body>
+</html>
